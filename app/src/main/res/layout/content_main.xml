@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.yoavi.mybrowser.Main"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        android:background="#bbbbbb"
+        android:id="@+id/linearLayout"
+        android:layout_marginBottom="3dp">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/addressbar"
+            android:hint="enter url"
+            android:textAlignment="gravity"
+            android:textColor="#040404"
+            android:textSize="15dp"
+            android:background="#fefefe"
+            android:layout_weight="15"
+            android:layout_marginLeft="3dp"
+            android:maxLines="1"
+            android:inputType="textUri"/>
+        <ImageButton
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:id="@+id/stop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/x5"
+            android:layout_gravity="center" />
+        <ImageButton
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:id="@+id/enter"
+            android:layout_centerVertical="true"
+            android:src="@drawable/rarrow" />
+        <Spinner
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner"
+            android:spinnerMode="dropdown"
+
+            android:src="@drawable/unnamed"
+            >
+        </Spinner>
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"       android:id="@+id/webView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout" />
+</RelativeLayout>

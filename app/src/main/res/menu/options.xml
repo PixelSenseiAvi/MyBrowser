@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Forward"
+        android:id="@+id/forward"  />
+    <item
+        android:title="Refresh"
+        android:id="@+id/refresh"  />
+    <item
+        android:title="clear History"
+        android:id="@+id/clrhistory"  />
+    <item
+        android:id="@+id/newtab"
+        android:title="New tab" />
+</menu>

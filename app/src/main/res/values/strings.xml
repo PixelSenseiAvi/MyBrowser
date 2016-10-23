@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyBrowser</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="options">
+        <item>forward</item>
+        <item>reload</item>
+        <item>clear history</item>
+
+    </string-array>
+</resources>
